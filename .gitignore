@@ -1,0 +1,5 @@
+.idea/
+new_venv/
+__pycache__/
+*.pyc   
+users1.db
