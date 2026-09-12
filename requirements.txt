@@ -1,0 +1,7 @@
+streamlit
+streamlit-option-menu
+matplotlib
+pydeck
+pandas
+numpy
+Pillow
