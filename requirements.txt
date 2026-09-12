@@ -5,3 +5,4 @@ pydeck
 pandas
 numpy
 Pillow
+pyperclip
