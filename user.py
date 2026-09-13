@@ -368,7 +368,8 @@ if selected == "Register":
         # Set up the SMTP server (use your email credentials)
         try:
             with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-                smtp.login("no.reply.pot.sol@gmail.com", "rfkh opci nhgs hyop")  # Replace with your credentials
+                smtp.login(
+                    st.secrets["no.reply.pot.sol@gmail.com"],st.secrets[ "rfkh opci nhgs hyop"])  # Replace with your credentials
                 smtp.send_message(email_msg)
             return True
         except Exception as e:
@@ -474,7 +475,8 @@ if selected == "Register":
             # Set up the SMTP server (use your email credentials)
             try:
                 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-                    smtp.login("no.reply.pot.sol@gmail.com", "rfkh opci nhgs hyop")  # Replace with your email credentials
+                    smtp.login(
+                        st.secrets["no.reply.pot.sol@gmail.com"],st.secrets[ "rfkh opci nhgs hyop"])  # Replace with your email credentials
                     smtp.send_message(email_msg)
                 return True
             except Exception as e:
